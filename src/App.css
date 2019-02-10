@@ -1,0 +1,469 @@
+/* #app-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+} */
+
+/* #location-container {
+  grid-column: 1;
+  text-align: center;
+} */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 5%;
+  height: 8%;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: skyblue;
+  
+}
+
+header div {
+  padding: 0.5em;
+}
+
+/* header form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+} */
+
+header form input {
+  width: 15rem;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #666;
+  border-radius: 1.3em;
+  padding: 1em 0.8em 1em 2.65em;
+  font-size: 1em;
+  border: none;
+}
+
+.button {
+  border-radius: 1em;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.detail-button {
+  border-radius: 1em;
+  margin-left: 0px;
+  margin-top: -10px;
+  color: grey;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+div.LocationContainer {
+  float: left;
+  width: 400px;
+  text-align: center;
+  margin-top: 500px;
+  margin-left: -20px; 
+  position: relative;
+  width: 400px;
+  height: 365px;
+}
+
+div.location-block {
+    background: black;
+    filter: alpha(opacity=60);
+    /* IE */
+    -moz-opacity: 0.6;
+    /* Mozilla */
+    opacity: 0.4;
+    /* CSS3 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+div.MemoContainer {
+  
+  width: 400px;
+  text-align: center;
+  margin-top: -560px;
+  margin-left: 1130px; 
+  position: absolute;
+  width: 450px;
+  height: 390px;
+  position: absolute;
+}
+
+div.memo-block {
+    background: black;
+    filter: alpha(opacity=60);
+    /* IE */
+    -moz-opacity: 0.6;
+    /* Mozilla */
+    opacity: 0.4;
+    /* CSS3 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+div.memo-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+  color: white;
+  
+}
+
+div.weather-block {
+  background: black;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.5;
+  /* Mozilla */
+  opacity: 0.4;
+  /* CSS3 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 1em;
+}
+
+div.sun-block {
+  background: black;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.6;
+  /* Mozilla */
+  opacity: 0.4;
+  /* CSS3 */
+  position: absolute;
+  top: -50px;
+  left: -25px;
+  height: 420px;
+  width: 450px;
+  border-radius: 1em;
+}
+
+div.sun-text {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+
+
+div.weather-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white
+}
+
+div.location-text {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+div.MapContainer {
+  float: left;
+  width: 20px;
+  margin-top: 30px;
+  margin-left: 50px;
+  border-radius: 1.3em;
+}
+
+div.WeatherContainer {
+  margin-top: 30px;
+  margin-right: 500px;
+  margin-left: 550px;
+  text-align: center;
+  width: 500px;
+  height: 840px;
+  position: relative;
+}
+
+div.AppContainer {
+  height: 940px; 
+  margin-left: -2px;
+  
+}
+
+div.tempNow {
+  font-size: 3rem;
+  margin-top: 10px;
+  
+}
+
+
+div.DateNow {
+  margin-left: 0px;
+  margin-top: 40px;
+  font-size: 1.3rem;
+  text-align: center;
+  
+}
+
+div.SunContainer {
+  position: relative;
+    left: 500px;
+    right: 0;
+    bottom: 770px;
+    margin: 0 auto;
+    width: 325px;
+    height: 162.5px;
+    border: 2px solid yellow;
+    border-bottom: 0;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+}
+
+
+
+.sun img {
+  position: absolute;
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.sunrise img, .sunset img {
+  position: absolute;
+  bottom: -38px;
+  width: 27px;
+}
+
+.sunrise img {
+  left: -15px;
+}
+
+.sunset img {
+  right: -13px;
+}
+
+.sunriseTime, .sunsetTime {
+  position: absolute;
+  bottom: -35px;
+  font-size: 1.4rem;
+}
+
+.sunrise span {
+  left: 23px;
+}
+
+.sunset span {
+  right: 23px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 95px 95px 95px 95px;
+  grid-gap: 4px;
+  background-color: lightgrey;
+  padding: 4px;
+  margin-top: 160px;
+  /* opacity: 0.8; */
+}
+
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  overflow: hidden;
+  height: 60px;
+  width: 95px;
+  
+  
+}
+
+.t-shirt {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.hoodie {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.coat {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.ice-cream {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.umbrella {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.sunglasses {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.cap {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.mittens {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.scarf {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.boots {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+.sun-block {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+.flip-flops {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95px;
+  height: 99px;
+  margin-top: -20px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.todayIcon {
+  margin-top: -10px;
+}
+
+.todayInfo {
+  font-size: 1.3rem;
+}
+
+.location-name {
+  font-size: 1.1rem;
+}
+
+.moon-img {
+  height: 45px;
+  
+}
+
+.moon {
+  margin-top: 130px;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.wolf {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.wolf-img {
+
+}
+
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.circle-video {
+  margin-top: 40px;
+  margin-left: 430px;
+}
+
+.circle-background {
+  background-color: #F4F2DF;
+  height: 860px;
+}
