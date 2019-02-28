@@ -68,16 +68,24 @@ header form input {
   margin-bottom: 10px;
 }
 
+div.MapContainer {
+  float: left;
+  width: 20px;
+  margin-top: 4vh;
+  margin-left: 3vw;
+  border-radius: 1.3em;
+}
+
 div.LocationContainer {
   float: left;
-  width: 400px;
   text-align: center;
-  margin-top: 500px;
-  margin-left: -20px; 
+  margin-top: 54vh;
+  margin-left: -1vw; 
   position: relative;
-  width: 400px;
-  height: 365px;
+  width: 24vw;
+  height: 39vh;
 }
+
 
 div.location-block {
     background: black;
@@ -95,16 +103,27 @@ div.location-block {
     border-radius: 1em;
 }
 
+div.location-text {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
 div.MemoContainer {
   
   width: 400px;
   text-align: center;
-  margin-top: -560px;
+  margin-top: -545px;
   margin-left: 1130px; 
-  position: absolute;
   width: 450px;
   height: 390px;
-  position: absolute;
+  position: relative;
+  overflow: hidden;
 }
 
 div.memo-block {
@@ -150,6 +169,16 @@ div.weather-block {
   border-radius: 1em;
 }
 
+
+div.WeatherContainer {
+  margin-top: 4vh;
+  margin-left: 32vw;
+  text-align: center;
+  width: 30vw;
+  height: 90vh;
+  position: relative;
+}
+
 div.sun-block {
   background: black;
   filter: alpha(opacity=60);
@@ -186,35 +215,8 @@ div.weather-text {
   color: white
 }
 
-div.location-text {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: white;
-  font-size: 1.2rem;
-}
 
 
-div.MapContainer {
-  float: left;
-  width: 20px;
-  margin-top: 30px;
-  margin-left: 50px;
-  border-radius: 1.3em;
-}
-
-div.WeatherContainer {
-  margin-top: 30px;
-  margin-right: 500px;
-  margin-left: 550px;
-  text-align: center;
-  width: 500px;
-  height: 840px;
-  position: relative;
-}
 
 div.AppContainer {
   height: 940px; 
@@ -239,9 +241,8 @@ div.DateNow {
 
 div.SunContainer {
   position: relative;
-    left: 500px;
-    right: 0;
-    bottom: 770px;
+  left: 30vw;
+  top: -82vh;
     margin: 0 auto;
     width: 325px;
     height: 162.5px;
