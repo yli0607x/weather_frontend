@@ -1,4 +1,5 @@
 # Weather.com
+![](weather.gif)
 
 ## Introduction
 
@@ -12,6 +13,7 @@ This is the repo for the Flatiron School Mod 4 Project. Weather.com is a easy-to
 - display sunrise, sunset and moon
 - recommend what clothes to wear
 - app background changes with current weather
+![](weather_features.gif)
 
 ## Install Instructions
 
