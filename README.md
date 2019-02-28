@@ -10,7 +10,8 @@ This is the repo for the Flatiron School Mod 4 Project. Weather.com is a easy-to
 - 3-day forecast 
 - switch between celcius and fahrenheit 
 - display sunrise, sunset and moon
-- recommend what clothes to wear 
+- recommend what clothes to wear
+- app background changes with current weather
 
 ## Install Instructions
 
@@ -19,7 +20,7 @@ This is the repo for the Flatiron School Mod 4 Project. Weather.com is a easy-to
 $ git clone git@github.com:yli0607x/weather_backend.git
 $ cd weather_backend
 $ bundle install
-$ rails s -p 4000
+$ rails s -p 3000
 ```
 
 #### Frontend
